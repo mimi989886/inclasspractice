@@ -176,20 +176,73 @@ $(document).ready(function () {
 
 
 <!-- rnb-text-begin -->
-<p>library(googlesheets)</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShnb29nbGVzaGVldHMpXG5nc19hdXRoKG5ld191c2VyID0gVFJVRSlcbmBgYCJ9 -->
+<pre class="r"><code>library(googlesheets)
+gs_auth(new_user = TRUE)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiTm8gdG9rZW4gY3VycmVudGx5IGluIGZvcmNlLlxuQWRkaW5nIC5odHRyLW9hdXRoIHRvIC5naXRpZ25vcmVcbmh0dHB1diBub3QgaW5zdGFsbGVkLCBkZWZhdWx0aW5nIHRvIG91dC1vZi1iYW5kIGF1dGhlbnRpY2F0aW9uXG4ifQ== -->
+<pre><code>No token currently in force.
+Adding .httr-oauth to .gitignore
+httpuv not installed, defaulting to out-of-band authentication</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuNC9ld0JLTkZieG5MMHVoaVU2OHBfa0dldzVybFpmeFB3V0xyb2VETFd6NkZmb2tleVdTN0tPYlJZXG5nc1N1cnZleTwtZ3Nfa2V5KFwiMW1DOWJueGoxMU5DTm9PQ3cwVm1uNG54RVJiSHRMamVHbzl2OUM5YjJHREVcIikgICNkb3dubG9hZCBzaGVldCBpbmZvcm1hdGlvbiBhcyBhbiBvYmplY3RcbmBgYCJ9 -->
+<pre class="r"><code>4/ewBKNFbxnL0uhiU68p_kGew5rlZfxPwWLroeDLWz6FfokeyWS7KObRY
+gsSurvey&lt;-gs_key(&quot;1mC9bnxj11NCNoOCw0Vmn4nxERbHtLjeGo9v9C9b2GDE&quot;)  #download sheet information as an object</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiU2hlZXQgc3VjY2Vzc2Z1bGx5IGlkZW50aWZpZWQ6IFwipf6vWrNxsFS//SAoUmVzcG9uc2VzKVwiXG4ifQ== -->
+<pre><code>Sheet successfully identified: &quot;愼㸵昼㹥愼㹦Z戼㸳q戼㸰T戼㹦昼㹤 (Responses)&quot;</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY2xhc3NTdXJ2ZXk8LWdzX3JlYWQoZ3NTdXJ2ZXksd3M9MSkgI2FjY2VzcyB0aGUgMXN0IHdvcmtzaGVldFxuYGBgIn0= -->
+<pre class="r"><code>classSurvey&lt;-gs_read(gsSurvey,ws=1) #access the 1st worksheet</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiQWNjZXNzaW5nIHdvcmtzaGVldCB0aXRsZWQgJ0Zvcm0gUmVzcG9uc2VzIDEnLlxuIn0= -->
+<pre><code>Accessing worksheet titled 'Form Responses 1'.</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5Eb3dubG9hZGluZzogMS40IGtCICAgICBcbkRvd25sb2FkaW5nOiAxLjQga0IgICAgIFxuRG93bmxvYWRpbmc6IDIuMiBrQiAgICAgXG5Eb3dubG9hZGluZzogMi4yIGtCICAgICBcbkRvd25sb2FkaW5nOiAyLjIga0IgICAgIFxuRG93bmxvYWRpbmc6IDIuMiBrQiAgICAgXG4ifQ== -->
+<pre><code>
+Downloading: 1.4 kB     
+Downloading: 1.4 kB     
+Downloading: 2.2 kB     
+Downloading: 2.2 kB     
+Downloading: 2.2 kB     
+Downloading: 2.2 kB     </code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiUGFyc2VkIHdpdGggY29sdW1uIHNwZWNpZmljYXRpb246XG5jb2xzKFxuICBUaW1lc3RhbXAgPSBjb2xfY2hhcmFjdGVyKCksXG4gIGBFbWFpbCBBZGRyZXNzYCA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgqW2mVyA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgvse4uSA9IGNvbF9pbnRlZ2VyKCksXG4gIKl+pu2mYabmrEawzyA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgqcqnTyA9IGNvbF9jaGFyYWN0ZXIoKSxcbiAgpbu+x7TBvsekwLzGID0gY29sX2ludGVnZXIoKSxcbiAgpbu+x7TBpdirZaR3sNGlW6SnvdKlfqyhsMogPSBjb2xfY2hhcmFjdGVyKClcbilcbiJ9 -->
+<pre><code>Parsed with column specification:
+cols(
+  Timestamp = col_character(),
+  `Email Address` = col_character(),
+  愼㸹m愼㸶W = col_character(),
+  戼㹥Ǹ戼㸹 = col_integer(),
+  愼㸹~愼㸶攼㹤愼㸶a愼㸶攼㸶愼㹣F戼㸰挼㹦 = col_character(),
+  愼㸹ʧO = col_character(),
+  愼㸵戼㹢戼㹥Ǵ挼㸱戼㹥Ǥ挼㸰戼㹣挼㸶 = col_integer(),
+  愼㸵戼㹢戼㹥Ǵ挼㸱愼㸵ثe愼㸴w戼㸰ѥ[愼㸴愼㸷戼㹤ҥ~愼㹣愼㸱戼㸰挼㹡 = col_character()
+)</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
 <p>This is an <a href="http://rmarkdown.rstudio.com">R Markdown</a> Notebook. When you execute code within the notebook, the results appear beneath the code.</p>
 <p>Try executing this chunk by clicking the <em>Run</em> button within the chunk or by placing your cursor inside it and pressing <em>Ctrl+Shift+Enter</em>.</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucGxvdChjYXJzKVxuYGBgZ3NfYXV0aChuZXdfdXNlciA9IFRSVUUpXG5cbkFkZCBhIG5ldyBjaHVuayBieSBjbGlja2luZyB0aGUgKkluc2VydCBDaHVuayogYnV0dG9uIG9uIHRoZSB0b29sYmFyIG9yIGJ5IHByZXNzaW5nICpDdHJsK0FsdCtJKi5cblxuV2hlbiB5b3Ugc2F2ZSB0aGUgbm90ZWJvb2ssIGFuIEhUTUwgZmlsZSBjb250YWluaW5nIHRoZSBjb2RlIGFuZCBvdXRwdXQgd2lsbCBiZSBzYXZlZCBhbG9uZ3NpZGUgaXQgKGNsaWNrIHRoZSAqUHJldmlldyogYnV0dG9uIG9yIHByZXNzICpDdHJsK1NoaWZ0K0sqIHRvIHByZXZpZXcgdGhlIEhUTUwgZmlsZSkuXG5nc1N1cnZleTwtZ3Nfa2V5KFwiMW1DOWJueGoxMU5DTm9PQ3cwVm1uNG54RVJiSHRMamVHbzl2OUM5YjJHREVcIikgICNkb3dubG9hZCBzaGVldCBpbmZvcm1hdGlvbiBhcyBhbiBvYmplY3RcbmNsYXNzU3VydmV5PC1nc19yZWFkKGdzU3VydmV5LHdzPTEpICNhY2Nlc3MgdGhlIDFzdCB3b3Jrc2hlZXRcblxuXG5UaGUgcHJldmlldyBzaG93cyB5b3UgYSByZW5kZXJlZCBIVE1MIGNvcHkgb2YgdGhlIGNvbnRlbnRzIG9mIHRoZSBlZGl0b3IuIENvbnNlcXVlbnRseSwgdW5saWtlICpLbml0KiwgKlByZXZpZXcqIGRvZXMgbm90IHJ1biBhbnkgUiBjb2RlIGNodW5rcy4gSW5zdGVhZCwgdGhlIG91dHB1dCBvZiB0aGUgY2h1bmsgd2hlbiBpdCB3YXMgbGFzdCBydW4gaW4gdGhlIGVkaXRvciBpcyBkaXNwbGF5ZWQuXG5gYGAifQ== -->
-<p><code>r plot(cars)</code>gs_auth(new_user = TRUE)</p>
-<p>Add a new chunk by clicking the <em>Insert Chunk</em> button on the toolbar or by pressing <em>Ctrl+Alt+I</em>.</p>
-<p>When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the <em>Preview</em> button or press <em>Ctrl+Shift+K</em> to preview the HTML file). gsSurvey&lt;-gs_key(“1mC9bnxj11NCNoOCw0Vmn4nxERbHtLjeGo9v9C9b2GDE”) #download sheet information as an object classSurvey&lt;-gs_read(gsSurvey,ws=1) #access the 1st worksheet</p>
-<p>The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike <em>Knit</em>, <em>Preview</em> does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed. ```</p>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucGxvdChjYXJzKVxuXG5cbkFkZCBhIG5ldyBjaHVuayBieSBjbGlja2luZyB0aGUgKkluc2VydCBDaHVuayogYnV0dG9uIG9uIHRoZSB0b29sYmFyIG9yIGJ5IHByZXNzaW5nICpDdHJsK0FsdCtJKi5cblxuV2hlbiB5b3Ugc2F2ZSB0aGUgbm90ZWJvb2ssIGFuIEhUTUwgZmlsZSBjb250YWluaW5nIHRoZSBjb2RlIGFuZCBvdXRwdXQgd2lsbCBiZSBzYXZlZCBhbG9uZ3NpZGUgaXQgKGNsaWNrIHRoZSAqUHJldmlldyogYnV0dG9uIG9yIHByZXNzICpDdHJsK1NoaWZ0K0sqIHRvIHByZXZpZXcgdGhlIEhUTUwgZmlsZSkuXG5cblxuXG5UaGUgcHJldmlldyBzaG93cyB5b3UgYSByZW5kZXJlZCBIVE1MIGNvcHkgb2YgdGhlIGNvbnRlbnRzIG9mIHRoZSBlZGl0b3IuIENvbnNlcXVlbnRseSwgdW5saWtlICpLbml0KiwgKlByZXZpZXcqIGRvZXMgbm90IHJ1biBhbnkgUiBjb2RlIGNodW5rcy4gSW5zdGVhZCwgdGhlIG91dHB1dCBvZiB0aGUgY2h1bmsgd2hlbiBpdCB3YXMgbGFzdCBydW4gaW4gdGhlIGVkaXRvciBpcyBkaXNwbGF5ZWQuXG5gYGAifQ== -->
+<pre class="r"><code>plot(cars)
+
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIjIwMTgtMTAtMTciDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KbGlicmFyeShnb29nbGVzaGVldHMpDQoNClRoaXMgaXMgYW4gW1IgTWFya2Rvd25dKGh0dHA6Ly9ybWFya2Rvd24ucnN0dWRpby5jb20pIE5vdGVib29rLiBXaGVuIHlvdSBleGVjdXRlIGNvZGUgd2l0aGluIHRoZSBub3RlYm9vaywgdGhlIHJlc3VsdHMgYXBwZWFyIGJlbmVhdGggdGhlIGNvZGUuIA0KDQpUcnkgZXhlY3V0aW5nIHRoaXMgY2h1bmsgYnkgY2xpY2tpbmcgdGhlICpSdW4qIGJ1dHRvbiB3aXRoaW4gdGhlIGNodW5rIG9yIGJ5IHBsYWNpbmcgeW91ciBjdXJzb3IgaW5zaWRlIGl0IGFuZCBwcmVzc2luZyAqQ3RybCtTaGlmdCtFbnRlciouIA0KDQpgYGB7cn0NCnBsb3QoY2FycykNCmBgYGdzX2F1dGgobmV3X3VzZXIgPSBUUlVFKQ0KDQpBZGQgYSBuZXcgY2h1bmsgYnkgY2xpY2tpbmcgdGhlICpJbnNlcnQgQ2h1bmsqIGJ1dHRvbiBvbiB0aGUgdG9vbGJhciBvciBieSBwcmVzc2luZyAqQ3RybCtBbHQrSSouDQoNCldoZW4geW91IHNhdmUgdGhlIG5vdGVib29rLCBhbiBIVE1MIGZpbGUgY29udGFpbmluZyB0aGUgY29kZSBhbmQgb3V0cHV0IHdpbGwgYmUgc2F2ZWQgYWxvbmdzaWRlIGl0IChjbGljayB0aGUgKlByZXZpZXcqIGJ1dHRvbiBvciBwcmVzcyAqQ3RybCtTaGlmdCtLKiB0byBwcmV2aWV3IHRoZSBIVE1MIGZpbGUpLg0KZ3NTdXJ2ZXk8LWdzX2tleSgiMW1DOWJueGoxMU5DTm9PQ3cwVm1uNG54RVJiSHRMamVHbzl2OUM5YjJHREUiKSAgI2Rvd25sb2FkIHNoZWV0IGluZm9ybWF0aW9uIGFzIGFuIG9iamVjdA0KY2xhc3NTdXJ2ZXk8LWdzX3JlYWQoZ3NTdXJ2ZXksd3M9MSkgI2FjY2VzcyB0aGUgMXN0IHdvcmtzaGVldA0KDQoNClRoZSBwcmV2aWV3IHNob3dzIHlvdSBhIHJlbmRlcmVkIEhUTUwgY29weSBvZiB0aGUgY29udGVudHMgb2YgdGhlIGVkaXRvci4gQ29uc2VxdWVudGx5LCB1bmxpa2UgKktuaXQqLCAqUHJldmlldyogZG9lcyBub3QgcnVuIGFueSBSIGNvZGUgY2h1bmtzLiBJbnN0ZWFkLCB0aGUgb3V0cHV0IG9mIHRoZSBjaHVuayB3aGVuIGl0IHdhcyBsYXN0IHJ1biBpbiB0aGUgZWRpdG9yIGlzIGRpc3BsYXllZC4=</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIjIwMTgtMTAtMTciDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KYGBge3J9DQpsaWJyYXJ5KGdvb2dsZXNoZWV0cykNCg0KZ3NfYXV0aChuZXdfdXNlciA9IFRSVUUpDQoNCmdzU3VydmV5PC1nc19rZXkoIjFtQzlibnhqMTFOQ05vT0N3MFZtbjRueEVSYkh0TGplR285djlDOWIyR0RFIikgICNkb3dubG9hZCBzaGVldCBpbmZvcm1hdGlvbiBhcyBhbiBvYmplY3QNCmNsYXNzU3VydmV5PC1nc19yZWFkKGdzU3VydmV5LHdzPTEpICNhY2Nlc3MgdGhlIDFzdCB3b3Jrc2hlZXQNCmBgYA0KDQoNClRoaXMgaXMgYW4gW1IgTWFya2Rvd25dKGh0dHA6Ly9ybWFya2Rvd24ucnN0dWRpby5jb20pIE5vdGVib29rLiBXaGVuIHlvdSBleGVjdXRlIGNvZGUgd2l0aGluIHRoZSBub3RlYm9vaywgdGhlIHJlc3VsdHMgYXBwZWFyIGJlbmVhdGggdGhlIGNvZGUuIA0KDQpUcnkgZXhlY3V0aW5nIHRoaXMgY2h1bmsgYnkgY2xpY2tpbmcgdGhlICpSdW4qIGJ1dHRvbiB3aXRoaW4gdGhlIGNodW5rIG9yIGJ5IHBsYWNpbmcgeW91ciBjdXJzb3IgaW5zaWRlIGl0IGFuZCBwcmVzc2luZyAqQ3RybCtTaGlmdCtFbnRlciouIA0KDQpgYGB7cn0NCnBsb3QoY2FycykNCg0KDQpBZGQgYSBuZXcgY2h1bmsgYnkgY2xpY2tpbmcgdGhlICpJbnNlcnQgQ2h1bmsqIGJ1dHRvbiBvbiB0aGUgdG9vbGJhciBvciBieSBwcmVzc2luZyAqQ3RybCtBbHQrSSouDQoNCldoZW4geW91IHNhdmUgdGhlIG5vdGVib29rLCBhbiBIVE1MIGZpbGUgY29udGFpbmluZyB0aGUgY29kZSBhbmQgb3V0cHV0IHdpbGwgYmUgc2F2ZWQgYWxvbmdzaWRlIGl0IChjbGljayB0aGUgKlByZXZpZXcqIGJ1dHRvbiBvciBwcmVzcyAqQ3RybCtTaGlmdCtLKiB0byBwcmV2aWV3IHRoZSBIVE1MIGZpbGUpLg0KDQoNCg0KVGhlIHByZXZpZXcgc2hvd3MgeW91IGEgcmVuZGVyZWQgSFRNTCBjb3B5IG9mIHRoZSBjb250ZW50cyBvZiB0aGUgZWRpdG9yLiBDb25zZXF1ZW50bHksIHVubGlrZSAqS25pdCosICpQcmV2aWV3KiBkb2VzIG5vdCBydW4gYW55IFIgY29kZSBjaHVua3MuIEluc3RlYWQsIHRoZSBvdXRwdXQgb2YgdGhlIGNodW5rIHdoZW4gaXQgd2FzIGxhc3QgcnVuIGluIHRoZSBlZGl0b3IgaXMgZGlzcGxheWVkLg==</div>
 
 
 
