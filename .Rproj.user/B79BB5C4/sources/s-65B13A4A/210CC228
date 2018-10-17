@@ -1,0 +1,24 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1539755210308.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1312397603",
+    "id" : "210CC228",
+    "lastKnownWriteTime" : 1539755590,
+    "last_content_update" : 1539755590132,
+    "path" : "C:/Users/leebaobao/Desktop/inclasspractice/inclasspractice.Rmd",
+    "project_path" : "inclasspractice.Rmd",
+    "properties" : {
+        "chunk_output_type" : "inline",
+        "cursorPosition" : "1,18",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
